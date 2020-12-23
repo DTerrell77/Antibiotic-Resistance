@@ -1,13 +1,13 @@
 # Antibiotic-Resistance
 
-##Table of Contents
+#Table of Contents
 1. About The Project
 2. Tools Used
 3. Getting Started
 4. Future Work
 5. Contact
 
-### About The Project
+## About The Project
 
 Antibiotic Resistance Website
 
