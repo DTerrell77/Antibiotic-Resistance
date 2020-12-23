@@ -56,7 +56,7 @@ Things to Note:
 <a name="future"></a>
 Future Work:
 ---------------
-* Gather data of percentage of cropland in the US and in the world so we can show the
+* Gather data about the percentage of cropland in the US and in the world so we can show the
 spread of bacteria through agriculture.
 * Create maps that shows a correlation of how agriculture can spread bacteria and become more resistant to antibiotics
 * Add a US map thats shows percent resistance of different bacteria onto the Shiny App.
