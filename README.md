@@ -2,10 +2,10 @@
 
 ##Table of Contents
 1. [About The Project](#about)
-2. [Tools Used]("#tools")
-3. [Getting Started]("#start")
-4. [Future Work]("#future")
-5. [Contact]("#contact")
+2. [Tools Used](#tools)
+3. [Getting Started](#start)
+4. [Future Work](#future)
+5. [Contact](#contact)
 
 <a name="about"></a>
 ## About The Project
