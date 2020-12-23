@@ -1,6 +1,6 @@
 # Antibiotic-Resistance
 
-#Table of Contents
+#####Table of Contents
 1. About The Project
 2. Tools Used
 3. Getting Started
