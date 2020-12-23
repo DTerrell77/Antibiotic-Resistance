@@ -1,3 +1,4 @@
+<a name="section_name"></a>
 # Antibiotic-Resistance
 
 ##Table of Contents
@@ -23,7 +24,7 @@ Antibiotic Resistance is a very important and serious issue all across the world
 <a name="start"></a>
 ### Getting Started:
 
-In order to clone this repository and start analyzing the data within these files, then you must install these packages first.
+In order to clone this repository and start analyzing the data within these files, then you must install these packages first:
 
 * install.packages("shiny")
 * install.packages("shinydashboard")
@@ -53,3 +54,6 @@ Gather data for public vs. private prisons to see if our trends follow throughou
 - Olivia Wilson - owilson23@cornellcollege.edu
 
 Project Link: https://github.com/Dylpickle77/Antibiotic-Resistance.git
+
+Markup : [back-to-top](#section_name)
+          section_title<a name="section_name"></a>
