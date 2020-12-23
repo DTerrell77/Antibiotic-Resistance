@@ -46,8 +46,8 @@ In order to clone this repository and start analyzing the data in RStudio, then 
 <a name="note"></a>
 Things to Note:
 ---------------
-* This repo contains the final presentation under the "Final Presentation" folder which also contains all of our visualizations
-* This repo contains the final paper under the "Final Paper" folder
+* This repo contains the final presentation under the "Final Presentation" folder which also contains all of our visualizations. Select "view raw" and it should download the ppt.
+* This repo contains the final paper under the "Final Paper" folder. Select "view raw" and it should download as a word doc.
 * This repo contains the code to the Shiny app and to all of the visualizations
 * This repo also contains a html file of the visualizations which was used from knit in RStudio
 * This READme file contains the link to [Antibiotic-Resistance](https://antibioticresistance2018.carrd.co/) 
