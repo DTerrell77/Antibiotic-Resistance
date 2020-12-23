@@ -4,6 +4,7 @@
 # Authors: Dylan Terrell, Olivia Wilson, Gabrielle Hartman
 # 
 # Cornell College, Mt.Vernon, IA
+
 #import libraries
 library("tidyr")
 library("ggformula")
