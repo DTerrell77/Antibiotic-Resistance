@@ -1,13 +1,14 @@
 <a name="section_name"></a>
-# Antibiotic-Resistance#
+# Antibiotic-Resistance
 
 Table of Contents:
 ---------------
 1. [About The Project](#about)
 2. [Tools Used](#tools)
 3. [Getting Started](#start)
-4. [Future Work](#future)
-5. [Contact](#contact)
+4. [Things to Note](#note)
+5. [Future Work](#future)
+6. [Contacts](#contact)
 
 <a name="about"></a>
 About The Project:
@@ -19,14 +20,15 @@ Antibiotic Resistance is a very important and serious issue all across the world
 <a name="tools"></a>
 Tools Used:
 ---------------
-* R programming
+* R programming language
+* R Studio
 * Shiny R
 * Carrd.co
 
 <a name="start"></a>
 Getting Started:
 ---------------
-In order to clone this repository and start analyzing the data within these files, then you must install these packages first:
+In order to clone this repository and start analyzing the data in RStudio, then you must install these packages first:
 
 * install.packages("shiny")
 * install.packages("shinydashboard")
@@ -36,22 +38,31 @@ In order to clone this repository and start analyzing the data within these file
 * install.packages("dplyr")
 * install.packages("tidyr")
 
-The main shiny dashboard application is under "final-dashboard" title "app.r". This file can be opened in Rstudio and run from the client as is.
-Maps is not needed for running, but it was used to get the initial data. Dplyr and stringr are used for data manipulation. Shiny, shinydashboard, and ggplot2 are used for visualizations.
+* Note that when you load the data, RStudio might ask you to install the packages and install them for you
+* The code for all of the visualizations is listed as "Final Project.Rmd"
+* The Shiny app can be found in the "Final Project" folder listed as "app.R". This file can be opened in RStudio
+
+
+<a name="note"></a>
+Things to Note:
+---------------
+* This repo contains the final presentation under the "Final Presentation" folder which also contains all of our visualizations
+* This repo contains the final paper under the "Final Paper" folder
+* This repo contains the code to the Shiny app and to all of the visualizations
+* This repo also contains a html file of the visualizations which was used from knit in RStudio
+* This READme file contains the link to [Antibiotic-Resistance](https://antibioticresistance2018.carrd.co/) 
+* Here is the link to the [Shiny App](https://antimicrobial-resistance.shinyapps.io/antibioticClassPrescriptionsUS2018/)
 
 <a name="future"></a>
 Future Work:
 ---------------
 Gather data of percentage of cropland in the US and in the world so we can show the
-spread of bacteria through agriculture 
-Add a US map of the 
-Gather comprehensive data on all facility populations to use population based rates.
-Perform regression analysis to see if state prison cases are different from general population cases.
-Gather data over time for releases in facilities to see effectiveness of releasing inmates and preventing the spread of COVID-19.
-Gather data for public vs. private prisons to see if our trends follow throughout the U.S.
+spread of bacteria through agriculture.
+Create maps that shows a correlation of how agriculture can spread bacteria and become more resitant to antibiotics
+Add a US map thats shows percent resistance of different bacteria onto the Shiny App.
 
 <a name="contact"></a>
-Contact:
+Contacts:
 ---------------
 - Dylan Terrell- dterrell21@cornellcollege.edu
 - Gabrielle Hartman - ghartman22@cornellcollege.edu
