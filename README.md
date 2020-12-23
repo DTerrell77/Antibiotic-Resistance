@@ -1,6 +1,6 @@
 # Antibiotic-Resistance
 
-#Table of Contents
+##Table of Contents
 1. [About The Project](#about)
 2. [Tools Used]("#tools")
 3. [Getting Started]("#start")
@@ -21,7 +21,7 @@ Antibiotic Resistance is a very important and serious issue all across the world
 * Carrd.co
 
 <a name="start"></a>
-## Getting Started:
+### Getting Started:
 
 In order to clone this repository and start analyzing the data within these files, then you must install these packages first.
 
@@ -37,7 +37,7 @@ The main shiny dashboard application is under "final-dashboard" title "app.r". T
 Maps is not needed for running, but it was used to get the initial data. Dplyr and stringr are used for data manipulation. Shiny, shinydashboard, and ggplot2 are used for visualizations.
 
 <a name="future"></a>
-##Future Work
+###Future Work
 Gather data of percentage of cropland in the US and in the world so we can show the
 spread of bacteria through agriculture 
 Add a US map of the 
@@ -47,7 +47,7 @@ Gather data over time for releases in facilities to see effectiveness of releasi
 Gather data for public vs. private prisons to see if our trends follow throughout the U.S.
 
 <a name="contact"></a>
-##Contact
+###Contact
 - Dylan Terrell- dterrell21@cornellcollege.edu
 - Gabrielle Hartman - ghartman22@cornellcollege.edu
 - Olivia Wilson - owilson23@cornellcollege.edu
