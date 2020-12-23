@@ -1,0 +1,174 @@
+```{r}
+#import libraries
+library("tidyr")
+library("ggformula")
+library(ggplot2)  # The grammar of graphics package
+library(maps)     # Provides latitude and longitude data for various maps
+library(dplyr)    # To assist with cleaning and organizing data
+
+#Read in Datasets
+#Glass Data is the original dataset
+GlassData <- read.csv("data/GlassData.csv", as.is = TRUE)
+#GlassData2 is the Glass dataset that contains the antibioticClass variable
+GlassData2 <- read.csv("data/GlassData2.csv", as.is = TRUE)
+Geography <- read.csv("data/Geography.csv", as.is = TRUE)
+GeoAntibiotics <- read.csv("data/GeoAntibiotics.csv", as.is = TRUE)
+GeoAntibioYears <- read.csv("data/GeoAntibioYears.csv", as.is = TRUE)
+GeoFluoro <- read.csv("data/GeoFluoro.csv", as.is = TRUE)
+
+#GeoAntibioYears
+```
+
+```{r}
+#Visualizations from GLASS Dataset
+
+#Extract specific pathogen names using the filter command
+test2 <- filter(GlassData, pathogen == "S. aureus" | pathogen == "Salmonella spp." | pathogen == "N. gonorrhoeae"| pathogen == "E. coli" | pathogen == "Acinetobacter spp." | pathogen == "S. pneumoniae")
+
+#Extract specific Antibiotic Classes using the filter command
+test3 <- filter(GlassData2, AntibioticClass == "Penicillins" | AntibioticClass == "Cephalosporins" | AntibioticClass == "Fluoroquinolones" |
+                  AntibioticClass == "Carbapenems" | AntibioticClass == "Macrolides")
+
+#Create a bar graph of the number of pathogens in the world for 2018
+g <- ggplot(test2, aes(y= pathogen)) + geom_bar()
+g <- g + ggtitle("Number of Pathogens in the World 2018")
+g
+
+#Create a boxplot using the filtered pathogens and their Percent resistance
+r <- qplot(data=test2, x=P_RES, y=pathogen, geom="boxplot", main = "Pathogen's Percent of Resistance to Different Antibiotics")
+r
+
+#Create a boxplot of the filterd antibiotic classes and show the percent resistance to them
+p <- qplot(data=test3, x=P_RES, y=AntibioticClass, geom="boxplot", main = "Total Percent of Resistance to Antibiotic Classes")
+p
+
+```
+
+
+```{r}
+# Change the country names in the GLASS dataset so that it can match 
+# the country names in the world dataset by using the gsub command
+
+test <- gsub("United States of America", "USA", GlassData$region)
+test <- gsub("Russian Federation", "Russia", test)
+test <- gsub("Republic of Korea", "South Korea", test)
+test <- gsub("United Kingdom of Great Britain and Northern Ireland", "UK", test)
+
+#Put all of the changed country names into the GlassData$region column
+GlassData$region <- test
+
+#Read in "world" dataset
+MainWorld <- map_data("world")
+#Create a base map of the world
+p <- ggplot() + 
+  geom_polygon(data=MainWorld, aes(x=long, y=lat, group=group),
+                color="black", fill="lightblue" )
+
+#Join the data from GlassData into MainWorld dataset
+MergedGlass <- left_join(MainWorld, GlassData, by = "region")
+
+#Create map that shows percent resistance in each country that is overlayed
+#with the base map
+p <- ggplot()
+p <- p + geom_polygon( data=MergedGlass, 
+          aes(x=long, y=lat, group=group, fill = P_RES), 
+          color="white", size = 0.2) +
+    ggtitle("2018 World Map of the Total Percent Resistance of all Pathogens")
+ 
+#Show Map
+p
+```
+```{r}
+#Read in "state" dataset
+MainStates <- map_data("state")
+
+#Set all values in the region column to lowercase
+#This is to eventually merge the Geography and MainStates dataset
+Geography$region <- tolower(Geography$region)
+
+#Create a base map of the US 
+g <- ggplot() + 
+  geom_polygon(data=MainStates, aes(x=long, y=lat, group=group),
+                color="black", fill="lightblue" )
+
+#Merge the MainStates and the Geography dataset by "region"
+MergedGeography <- inner_join(MainStates, Geography, by = "region")
+#str(MergedGeography)
+
+#Create a US map using the MergedGeography and fill using the P_RES variable
+g <- ggplot()
+g <- g + geom_polygon( data=MergedGeography, 
+          aes(x=long, y=lat, group=group, fill = P_RES), 
+          color="white", size = 0.2) +
+    ggtitle("2018 US Map of MDR. of E. Coli")
+g
+```
+
+
+```{r}
+#Read in "state" dataset
+MainStates <- map_data("state")
+
+#Set all values in the region column to lowercase
+#This is to eventually merge the GeoAntibiotics and MainStates dataset
+GeoAntibiotics$region <- tolower(GeoAntibiotics$region)
+
+#Create a base map of the US using the state dataset
+g <- ggplot() + 
+  geom_polygon(data=MainStates, aes(x=long, y=lat, group=group),
+                color="black", fill="lightblue" )
+
+#Merge the GeoAntibiotics and the MainStates by "region"
+MergedGeoAntibiotics <- inner_join(MainStates, GeoAntibiotics, by = "region")
+
+#Create a US map of the MergedGeoAntibiotics and fill it using the prescriptions/1000 Pop.
+g <- ggplot()
+g <- g + geom_polygon( data=MergedGeoAntibiotics, 
+          aes(x=long, y=lat, group=group, fill = Prescriptions.per.1000.Population), 
+          color="white", size = 0.2) + 
+    ggtitle("Average Antibiotic Class Prescriptions/1000 Pop. in 2018")
+g
+```
+```{r}
+#Read in "state" dataset
+MainStates <- map_data("state")
+
+#Select the region column in the GeoFluoro dataset
+#and change all the countries to lowercase in order
+#to eventually merge the state and GeoFluoro datasets by "region"
+GeoFluoro$region <- tolower(GeoFluoro$region)
+
+#Create a base map of the United States
+g <- ggplot() + 
+  geom_polygon(data=MainStates, aes(x=long, y=lat, group=group),
+                color="black", fill="lightblue" )
+
+#Merge the MainStates and GeoFluoro dataset together by "region"
+MergedGeoFluoro <- inner_join(MainStates, GeoFluoro, by = "region")
+
+#Create a US map using the MergedGeoFluoro dataset and fill using the prescriptions
+#varible
+g <- ggplot()
+g <- g + geom_polygon( data=MergedGeoFluoro, 
+          aes(x=long, y=lat, group=group, fill = Prescriptions_per_1000_Population), 
+          color="white", size = 0.2) +
+    ggtitle("US Map of Prescriptions/1000 Pop. of Fluoro. Antibiotics 2018")
+g
+```
+
+
+
+```{r}
+#Visualizations from GeoAntibiotics dataset
+#Create a boxplot of the prescriptions of the antibiotic classes in the US in 2018
+p <- qplot(data=GeoAntibiotics, x=Prescriptions.per.1000.Population, y=Antibiotic.Class, geom="boxplot",
+           main = "Total Prescriptions/1000 Pop. for Different Antibiotics in 2018")
+p
+
+
+```
+
+
+
+
+

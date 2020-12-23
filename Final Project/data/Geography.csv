@@ -1,0 +1,56 @@
+ID_State,region,ID_Event_Year,Event_Year,ID_Phenotype,Phenotype,ID_Infectious_Event Type,Infectious_Event_Type,P_RES,NUM_RES,Number_of_Isolates_Tested,Lower_CI,Upper_CI
+,United States,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,9.2,1669,18106,8.8,9.6
+1,Alabama,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.4,20,269,4.7,11.1
+2,Alaska,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,10,3,30,2.6,24.9
+4,Arizona,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,6.2,16,258,3.7,9.7
+5,Arkansas,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5,9,181,2.5,8.9
+6,California,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,14.1,383,2724,12.8,15.4
+8,Colorado,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.8,14,242,3.3,9.3
+9,Connecticut,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,12.9,19,147,8.2,19.1
+10,Delaware,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,2.6,1,39,0.1,12
+11,District of Columbia,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,8.5,8,94,4,15.5
+12,Florida,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,11.7,132,1126,9.9,13.7
+13,Georgia,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.6,28,498,3.8,7.9
+15,Hawaii,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,3.3,2,60,0.6,10.6
+16,Idaho,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,1.2,1,82,0.1,5.9
+17,Illinois,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.4,46,622,5.5,9.7
+18,Indiana,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,6.1,20,326,3.9,9.2
+19,Iowa,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,4,5,125,1.5,8.6
+20,Kansas,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,3.1,5,160,1.2,6.8
+21,Kentucky,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,13.7,29,211,9.6,18.9
+22,Louisiana,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,6.7,25,371,4.5,9.6
+23,Maine,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,1.9,1,53,0.1,9
+24,Maryland,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,9.2,26,283,6.2,13
+25,Massachusetts,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.6,33,436,5.4,10.3
+26,Michigan,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.3,38,523,5.3,9.7
+27,Minnesota,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.8,18,310,3.6,8.8
+28,Mississippi,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.1,14,197,4.1,11.4
+29,Missouri,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,6.8,28,412,4.7,9.5
+30,Montana,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,2.1,1,47,0.1,10
+31,Nebraska,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,13.2,10,76,6.9,22.2
+32,Nevada,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,14.6,22,151,9.6,20.9
+33,New Hampshire,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,0,0,67,0,4.4
+34,New Jersey,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,14.9,59,397,11.6,18.6
+35,New Mexico,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,11.2,10,89,5.9,19.1
+36,New York,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,12.2,130,1065,10.3,14.3
+37,North Carolina,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7,35,497,5,9.6
+38,North Dakota,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,8.3,2,24,1.4,24.9
+39,Ohio,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7,49,702,5.3,9
+40,Oklahoma,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.9,12,203,3.2,9.8
+41,Oregon,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.5,11,201,2.9,9.3
+42,Pennsylvania,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,6.2,71,1152,4.9,7.7
+44,Rhode Island,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5,3,60,1.3,13
+45,South Carolina,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,8.7,24,277,5.8,12.4
+46,South Dakota,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,1.9,1,53,0.1,9
+47,Tennessee,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.2,31,429,5.1,10
+48,Texas,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,12.5,193,1540,10.9,14.3
+49,Utah,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,8.8,8,91,4.2,16
+50,Vermont,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,0,0,34,0,8.4
+51,Virginia,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,5.6,22,394,3.6,8.2
+53,Washington,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,3.8,13,345,2.1,6.2
+54,West Virginia,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,9.1,9,99,4.5,16
+55,Wisconsin,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,7.9,23,290,5.2,11.5
+56,Wyoming,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,,0,0,,
+66,Guam,303,2018,11,MDR<em>E. coli</em>,120,All Infectious Event Type Data,,, < 20, < 20, < 20
+72,Puerto Rico,303,2018,11,MDR <em>E.coli</em>,120,All Infectious Event Type Data,20,5,25,7.7,38.9
+78,Virgin Islands,303,2018,11,MDR <em>E. coli</em>,120,All Infectious Event Type Data,,, < 20, < 20, < 20
